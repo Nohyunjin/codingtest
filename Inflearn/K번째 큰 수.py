@@ -1,4 +1,5 @@
-# 4
+import sys
+sys.stdin=open("input.txt", "rt")
 
 n, k = map(int, input().split())
 a = list(map(int, input().split()))
