@@ -18,8 +18,10 @@ cnt = 0
 pnt = 0
 
 for i in range(n) :
-    if a[i] == 1:
+    if a[i] == 1 :
         cnt += 1
         pnt += cnt
     else :
-        
+        cnt = 0
+
+print(pnt)
