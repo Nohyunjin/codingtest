@@ -1,6 +1,6 @@
 n = int(input())
 
-def print_list(n):
+def prime_list(n):
     ch = [True] * n
     m = int(n ** 0.5)
     
@@ -8,6 +8,7 @@ def print_list(n):
         if ch[i] == True:
             for ch[j] in range(2 * i, n, i):
                 ch[j] = False
-    return [ i for i in range(2, n) if ch[i] == True ]
+                
+    return [i for i in range(2, n) if ch[i] == True]
 
-len(print_list(n))
+len(prime_list(n))
